@@ -204,6 +204,32 @@
           Frame-level caption annotation for the FiT-AG dataset are created by using the <span style="#6666FF">Qwen2.5VL-7B</span> model to generate a text description for each frame, and in FiT-PVSG dataset, it come from aligning the original segment-level captions to each individual frame.
         </li>
       </ul>
+
+      <h2 class="title is-3">
+        Dataset Statistic
+      </h2>
+      <p style="margin-top: 0rem; margin-bottom: 1.5rem;font-size: 20px;">
+        FiTBench contains two datasets, FiT-AG and FiT-PVSG, which selects videos from <span style="#FFCC00">Action Genome</span> dataset and <span style="#1497E4">OpenPVSG</span> dataset
+      </p>
+      <h3 class="title is-4">
+        Object and Relationship Statistic
+      </h3>
+      <ul style="margin-left: 1.5em; list-style-type: disc;">
+        <li style="font-size: 20px;">
+          For <span style="#FFCC00">FiT-AG</span> dataset, we provide annotations for 234, 253 frames with a total of 476, 229 bounding boxes of 35 object classes (excluding person), and 1, 715, 568 instances of 25 relationship classes. 
+        </li>
+        <li style="font-size: 20px;">
+          For <span style="#1497E4">FiT-PVSG</span> dataset, we provide annotations for 149, 484 frames with a total of 216, 855 bounding boxes of 128 object classes (excluding person), and 117, 964 instances of 72 relationship classes.
+        </li>
+      </ul>
+      <figure class="image" style="margin-bottom: 0rem;">
+        <img src="static/images/fig_object.png" alt="fig_object" style="max-width: 100%; height: auto;">
+      </figure>
+      <figure class="image" style="margin-bottom: 0rem;">
+        <img src="static/images/fig_relations.png" alt="fig_relations" style="max-width: 100%; height: auto;">
+      </figure>
+
+      
     </div>
   </div>
 </section>
