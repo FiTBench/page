@@ -161,7 +161,7 @@
       <p style="margin-top: 1rem; margin-bottom: 1.5rem;font-size: 20px;">
         FiTBench supports the required fine-grained narrative reasoning by detailing contextual drivers and scene evolution cues.
       </p>
-      <figure class="image" style="margin-bottom: 0rem;">
+      <figure class="image" style="margin-bottom: 1rem;">
         <img src="static/images/fig_motivation.png" alt="fig_motivation" style="max-width: 100%; height: auto;">
       </figure>
       <h3 class="title is-4">
@@ -190,10 +190,10 @@
       <h2 class="title is-3">
         Benchmark Construction
       </h2>
-      <p style="margin-top: 0rem; margin-bottom: 1.5rem;font-size: 20px;">
+      <p style="margin-top: 1rem; margin-bottom: 1.5rem;font-size: 20px;">
         To obtain fine-grained text cues, we develop a systematic annotation pipeline using the large-scale vision-language model <span style="color:#6666FF">Qwen2.5VL-7B</span>. Our <span style="color: #FFCC00;">expert study</span> verifies that the annotations are reliable, with <span style="color:#FFCC00;">high acceptance rates</span> for all types of constraint labels, each with fairly <span style="color:#FFCC00;">low percentage of disagreement</span> cases between the experts.
       </p>
-      <figure class="image" style="margin-bottom: 0rem;">
+      <figure class="image" style="margin-bottom: 1rem;">
         <img src="static/images/fig_pipeline.png" alt="fig_pipeline" style="max-width: 100%; height: auto;">
       </figure>
       <ul style="margin-left: 1.5em; list-style-type: disc;">
@@ -208,16 +208,22 @@
       <h2 class="title is-3">
         Method
       </h2>
-      <p style="margin-top: 0rem; margin-bottom: 1.5rem;font-size: 20px;">
+      <p style="margin-top: 1rem; margin-bottom: 1.5rem;font-size: 20px;">
         In order to understand complex object interactions and their dynamics over time, we incorporate fine-grained text cues to reason about narrative evolution, including subject <span style="color: #99CC00;">emotion</span>, object <span style="color: #4BACC6;">state</span>, and <span style="color: #C05046;">frame-level caption</span>. These features are encoded using the CLIP model.
       </p>
-      <figure class="image" style="margin-bottom: 0rem;">
+      <figure class="image" style="margin-bottom: 1rem;">
         <img src="static/images/fig_methods.png" alt="fig_methods" style="max-width: 100%; height: auto;">
       </figure>
 
       <h2 class="title is-3">
         Experimental
       </h2>
+      <p style="margin-top: 1rem; margin-bottom: 1.5rem;font-size: 20px;">
+        Different baselines incorporate TAVS modules with different boosts on the fitbench.
+      </p>
+      <figure class="image" style="margin-bottom: 1rem;">
+        <img src="static/images/fig_result0.3_ave.png" alt="fig_methods" style="max-width: 100%; height: auto;">
+      </figure>
 
       
     </div>
