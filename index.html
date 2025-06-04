@@ -183,7 +183,7 @@
         To obtain fine-grained text cues, we develop a systematic annotation pipeline using the large-scale vision-language model <strong style="color:#6666FF">Qwen2.5VL-7B</strong>. Our <strong>expert study</strong> verifies that the annotations are reliable, with <strong >high acceptance rates</strong> for all types of constraint labels, each with fairly <strong>low percentage of disagreement</strong> cases between the experts.
       </p>
       <figure class="image" style="margin-bottom: 1.5rem;">
-        <img src="static/images/fig_pipeline.png" alt="fig_pipeline" style="max-width: 100%; height: auto;">
+        <img src="static/images/fig_page_pipeline.png" alt="fig_pipeline" style="max-width: 100%; height: auto;">
       </figure>
       <ul style="margin-left: 1.5em; list-style-type: disc; margin-top: 1.5rem; margin-bottom: 1.5rem;">
         <li style="font-size: 20px;">
@@ -197,6 +197,12 @@
       <h2 class="title is-3" style="text-align: center;">
         Benchmark Statistic
       </h2>
+      <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
+        FiTBench includes two subsets, FiT-AG and FiT-PVSG, derived from the Action Genome and OpenPVSG datasets. The table shows the number and proportion of annotated frames, with an average annotation coverage of 89.3%.
+      </p>
+      <figure class="image" style="margin-bottom: 1.5rem;">
+        <img src="static/images/fig_label_statistic.png" alt="fig_emotion" style="max-width: 100%; height: auto;">
+      </figure>
       <h3 class="title is-4">
         Emotion Statistic
       </h3>
@@ -269,26 +275,18 @@
 
 
       <h2 class="title is-3" style="text-align: center;">
-        Method
+        Method and Experimental
       </h2>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
         In order to understand complex object interactions and their dynamics over time, we incorporate fine-grained text cues to reason about narrative evolution, including subject <strong style="color: #99CC00;">emotion</strong>, object <strong style="color: #4BACC6;">state</strong>, and <strong style="color: #C05046;">frame-level caption</strong>. These features are encoded using the CLIP model.
       </p>
       <figure class="image" style="margin: 0 auto 1rem auto; text-align: center; width: fit-content;">
-        <img src="static/images/fig_methods.png" alt="fig_methods" style="width: 600px ;height: 526px;">
+        <img src="static/images/fig_method_experiment.png" alt="fig_method_experiment" style="max-width: 100%; height: auto;">
       </figure>
-
-      <h2 class="title is-3" style="text-align: center;">
-        Experimental
-      </h2>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
         Different baselines incorporate TAVS modules with different boosts on the fitbench.
       </p>
-      <figure class="image" style="margin-bottom: 1rem;">
-        <img src="static/images/fig_result_ave.png" alt="fig_methods" style="max-width: 100%; height: auto;">
-      </figure>
 
-      
     </div>
   </div>
 </section>
