@@ -137,7 +137,7 @@
     border-radius: 12px;
     padding: 1rem 1.5rem;
     margin: 1rem 0;
-    font-size: 1rem;
+    font-size: 20rem;
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
@@ -380,7 +380,7 @@
         Method and Experimental
       </h2>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        In order to understand complex object interactions and their dynamics over time, we incorporate fine-grained text cues to reason about narrative evolution, including subject <strong style="color: #99CC00;">emotion</strong>, object <strong style="color: #4BACC6;">state</strong>, and <strong style="color: #C05046;">frame-level caption</strong>. These features are encoded using the CLIP model.
+        We propose a model-agnostic module named Text-Augmented Visual Semantic (TAVS) module that integrates fine-grained text cues—<strong style="color: #99CC00;">emotion</strong>, <strong style="color: #4BACC6;">state</strong>, and <strong style="color: #C05046;">frame-level caption</strong> encoded by CLIP—into baseline models to enhance reasoning about complex object interactions and narrative dynamics.
       </p>
       <figure class="image" style="margin: 0 auto 1rem auto; text-align: center; width: fit-content;">
         <img src="static/images/fig_method_experiment.png" alt="fig_method_experiment" style="max-width: 100%; height: auto;">
@@ -389,10 +389,13 @@
         Different baselines incorporate TAVS modules with different boosts on the fitbench.
       </p>
       <div class="highlight-box" >
-            <p>
-              <span style="font-size: larger; text-align: center; font-weight: bold;">Takeaway I: Different baselines incorporate TAVS modules with different boosts on the fitbench.
-              </span>
-            </p>
+          <b>Takeaway I:</b> Different baselines incorporate TAVS modules with different boosts on the fitbench.
+      </div>
+      <div class="highlight-box" >
+          <b>Takeaway II:</b> When observing a limited portion of the video, the improvement is notably higher, suggesting that fine-grained text cues offer strong priors for future reasoning.
+      </div>
+      <div class="highlight-box" >
+          <b>Takeaway II:</b> The mean recall results suggest that the model struggles to generalize across the diverse relation types in FiT-PVSG, reflecting the increased difficulty of scene graph prediction on this dataset.
       </div>
 
     </div>
