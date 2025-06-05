@@ -144,6 +144,46 @@
   .highlight-box b {
     font-weight: bold;
   }
+
+  .finding-box {
+        background-color: #f8f9fa;
+        border-radius: 20px;
+        padding: 1.5rem;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      }
+  
+      .finding-content {
+        margin: 0;
+      }
+  
+      .number {
+        font-weight: bold;
+        color: #2c3e50;
+      }
+  
+      .arrow {
+        color: #7f8c8d;
+        margin: 0 0.5rem;
+        font-weight: bold;
+      }
+  
+      .conclusion {
+        color: #2980b9;
+        font-weight: bold;
+      }
+  
+      .text-center {
+        text-align: center;
+      }
+
+      .list1 {
+      list-style-type: circle;
+      }
+
+      .list2 {
+      list-style-type: square;
+      margin-left: 2em;
+      }
 </style>
   
 <body>
@@ -395,14 +435,59 @@
           <b>Takeaway II:</b> When observing a limited portion of the video, the improvement is notably higher, suggesting that fine-grained text cues offer strong priors for future reasoning.
       </div>
       <div class="highlight-box" >
-          <b>Takeaway II:</b> The mean recall results suggest that the model struggles to generalize across the diverse relation types in FiT-PVSG, reflecting the increased difficulty of scene graph prediction on this dataset.
+          <b>Takeaway III:</b> The mean recall results suggest that the model struggles to generalize across the diverse relation types in FiT-PVSG, reflecting the increased difficulty of scene graph prediction on this dataset.
+      </div>
+
+      <h2 class="title is-3" style="text-align: center;">
+        Case Study
+      </h2>
+      <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
+        Scene graph anticipation results of baseline(SceneSayerSDE) and baseline(SceneSayerSDE) with TAVS module on the proposed FiTBench. We report performance for both short-term and long-term future predictions.
+      </p>
+      <figure class="image" style="margin: 0 auto 1rem auto; text-align: center; width: fit-content;">
+        <img src="static/images/fig_visualize_supp.png" alt="fig_visualize" style="max-width: 100%; height: auto;">
+      </figure>
+      <div class="highlight-box" >
+          <b>Takeaway IV:</b> Our approach performs better in both short-term and long-term predictions.
       </div>
 
     </div>
   </div>
 </section>
 
-
+ 
+   <!-- Next Steps / Future Directions Section -->
+  <section class="section">
+    <div class="columns is-centered has-text-centered">
+      <div class="column">
+        <h2 class="title is-3">Conclusion</h2>
+      </div>
+    </div>
+  
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column">
+          <div class="content has-text-justified">
+  
+            <div class="finding-box mb-4">
+              <span style="font-size: larger; text-align: center; font-weight: bold;">
+                In this work, we propose a new benchmark VinaBench, which introduces fine-grained contextual drivers through a systematic annotation pipeline to facilitate understanding of the narrative reasons for relation evolution. 
+            </div>
+            <div class="finding-box mb-4">
+              <span style="font-size: larger; text-align: center; font-weight: bold;">
+                FiTBench incorporates ego-centric videos featuring rare hand-object interactions, which differ from the common exo-centric views. This shift in perspective presents new challenges for SGA.
+              </span>
+            </div>
+            <div class="finding-box mb-4">
+              <span style="font-size: larger; text-align: center; font-weight: bold;">
+                A model-agnostic Text-Augmented Visual Semantics (TAVS) module is designed to reason about narrative evolution by incorporating the fine-grained text cues.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
 
 
 
