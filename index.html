@@ -44,6 +44,87 @@
   <script src="static/js/bulma-slider.min.js"></script>
   <script src="static/js/index.js"></script>
 </head>
+
+<style>
+  .expandable-card .card-text-container {
+    max-height: 200px;
+    overflow-y: hidden;
+    position: relative;
+  }
+
+  .expandable-card.expanded .card-text-container {
+    max-height: none;
+  }
+
+  .expand-btn {
+    position: relative;
+    display: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #510c75;
+    border-color: transparent;
+  }
+
+  .expand-btn:hover {
+    background-color: rgba(200, 200, 200, 0.8);
+    text-decoration: none;
+    border-color: transparent;
+    color: #510c75;
+  }
+
+  .expand-btn:focus {
+    outline: none;
+    text-decoration: none;
+  }
+
+  .expandable-card:not(.expanded) .card-text-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 1));
+  }
+
+  .expandable-card:not(.expanded) .expand-btn {
+    margin-top: -40px;
+  }
+
+  .card-body {
+    padding-bottom: 5px;
+  }
+
+  .vertical-flex-layout {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .figure-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .adjustable-font-size {
+    font-size: calc(0.5rem + 2vw);
+  }
+
+  .chat-history {
+    flex-grow: 1;
+    overflow-y: auto;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  #gradio pre {
+    background-color: transparent;
+  }
+</style>
+  
 <body>
 
 
@@ -123,12 +204,12 @@
 
 
 <!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
+ <section class="section" style="background-color:#efeff081">
+   <div class="container is-max-desktop">
+     <div class="columns is-centered has-text-centered">
+       <div class="column is-six-fifths">
+         <h2 class="title is-3">Abstract</h2>
+         <div class="content has-text-justified">
           <p>
             Scene graph anticipation (SGA) aims to predict relations among objects represented as a scene graph for unseen future based only on the past visual observations. As an extremely challenging task, SGA requires fine-grained narrative reasoning capability to understand complex object interactions and their dynamics over time. However, existing datasets lack annotations for contextual drivers of relation evolution (e.g., person emotions, object states), thus failing to support such reasoning ability. To address these limitations, we present FiTBench, a benchmark comprising two datasets with comprehensive semantics and diverse scenarios. First, by providing a systematic annotation pipeline, FiTBench details cues of scene and narrative evolution thus enabling fine-grained reasoning. Second, FiTBench integrates ego-centric videos with rare hand-object interactions, enriching existing benchmarks and challenging current SGA methods. Third, a model-agnostic Text-Augmented Visual Semantics(TAVS) module is proposed to reason about narrative evolution by incorporating fine-grained text cues. Experimental results show that by integrating TAVS with fine-grained text cues, six representative SGA models achieve average gains of 18% and 26% on two FiTBench datasets, respectively.
           </p>
