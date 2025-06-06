@@ -311,11 +311,13 @@
       </figure>
       <ul style="margin-left: 1.5em; list-style-type: disc; margin-top: 1.5rem; margin-bottom: 1.5rem;">
         <li style="font-size: 20px;">
-          <strong style="color: #99CC00;">Emotion</strong> and <strong style="color: #4BACC6;">state</strong> annotations are generated using Qwen2.5VL-7B with single-word prompts. To ensure quality, we filter abnormal outputs, merge semantically similar labels, and remove noisy or meaningless ones.
+          <strong style="color: #99CC00;">Emotion</strong> and <strong style="color: #4BACC6;">state</strong> annotations are generated using <strong style="color:#6666FF">Qwen2.5VL-7B</strong> with single-word prompts. To ensure quality, we filter abnormal outputs, merge semantically similar labels, and remove noisy or meaningless ones.
         </li>
         <li style="font-size: 20px;">
           <strong style="color: #C05046;">Frame-level caption</strong> in <strong style="color: #f7a049;">FiT-AG</strong> dataset are generated via <strong style="color:#6666FF">Qwen2.5VL-7B</strong>’s image description capability.
         </li>
+        <li style="font-size: 20px;">
+          <strong style="color: #818181;">Bounding box</strong> for subject-object pairs are localized in video frames using <strong style="color:#6666FF">Qwen2.5VL-7B</strong>, based on scene graph triples, with a few invalid or noisy boxes manually removed.
       </ul>
 
       <h2 class="title is-3" style="text-align: center;">
@@ -421,7 +423,7 @@
           <b>Takeaway II:</b> When observing a limited portion of the video, the improvement is notably higher, suggesting that fine-grained text cues offer strong priors for future reasoning.
       </div>
       <div class="highlight-box" >
-          <b>Takeaway III:</b> The mean recall results suggest that the model struggles to generalize across the diverse relation types in <strong style="color: #b8aeea;">FiT-PVSG</strong>, reflecting the increased difficulty of scene graph prediction on this dataset.
+          <b>Takeaway III:</b> The mean recall results suggest that the model struggles to generalize across the diverse relation types in FiT-PVSG, reflecting the increased difficulty of scene graph prediction on this dataset.
       </div>
 
       <h2 class="title is-3" style="text-align: center;">
