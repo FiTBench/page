@@ -301,7 +301,7 @@
           <strong style="color: #99CC00;">Emotion</strong> and <strong style="color: #4BACC6;">state</strong> annotations are generated using Qwen2.5VL-7B with single-word prompts. To ensure quality, we filter abnormal outputs, merge semantically similar labels, and remove noisy or meaningless ones.
         </li>
         <li style="font-size: 20px;">
-          <strong style="color: #C05046;">Frame-level caption</strong> in <strong style="color: #fbe79e;">FiT-AG</strong> dataset are generated via <strong style="color:#6666FF">Qwen2.5VL-7B</strong>’s image description capability.
+          <strong style="color: #C05046;">Frame-level caption</strong> in <strong style="color: #f7a049;">FiT-AG</strong> dataset are generated via <strong style="color:#6666FF">Qwen2.5VL-7B</strong>’s image description capability.
         </li>
       </ul>
 
@@ -309,19 +309,20 @@
         Benchmark Statistic
       </h2>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        FiTBench includes two subsets, <strong style="color: #fbe79e;">FiT-AG</strong> and <strong style="color: #b8aeea;">FiT-PVSG</strong>, derived from the Action Genome and OpenPVSG datasets.
+        FiTBench includes two subsets, <strong style="color: #f7a049;">FiT-AG</strong> and <strong style="color: #b8aeea;">FiT-PVSG</strong>, derived from the Action Genome and OpenPVSG datasets.
       </p>
 
       <h3 class="title is-4">
         Emotion Statistic
       </h3>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        We annotated 53 and 54 emotion categories in the <strong style="color: #fbe79e;">FiT-AG</strong> and <strong style="color: #b8aeea;">FiT-PVSG</strong> datasets, respectively.
+        We annotated <strong style="color: #f7a049;">53</strong> and <strong style="color: #b8aeea;">54</strong> emotion categories in the <strong style="color: #f7a049;">FiT-AG</strong> and <strong style="color: #b8aeea;">FiT-PVSG</strong> datasets, respectively.
         Based on subject emotion characteristics, we categorized emotion labels into seven categories: 
       </p>
       <figure class="image" style="margin-bottom: 1.5rem;">
         <img src="static/images/fig_emotion_distribution.png" alt="fig_emotion" style="max-width: 100%; height: auto;">
       </figure>
+      <!--
       <ul style="margin-left: 1.5em; list-style-type: disc; margin-top: 1.5rem; margin-bottom: 1.5rem;">
         <li style="font-size: 20px;">
           Neutral Emotions: A calm, emotionally stable state without strong positive or negative tendencies.
@@ -344,16 +345,18 @@
           Miscellaneous: Labeling uncertainty in mood determination due to incomplete information or ambiguity in expression.
         </li>
       </ul>
+      -->
 
       <h3 class="title is-4">
         State Statistic
       </h3>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        We labeled the <strong style="color: #fbe79e;">FiT-AG</strong> dataset and the <strong style="color: #b8aeea;">FiT-PVSG</strong> dataset with 115 and 125 categories of state labels, respectively.  Based on object state characteristics, we categorized state labels into nine categories: 
+        We labeled the <strong style="color: #f7a049;">FiT-AG</strong> dataset and the <strong style="color: #b8aeea;">FiT-PVSG</strong> dataset with <strong style="color: #f7a049;">115</strong> and <strong style="color: #b8aeea;">125</strong> categories of state labels, respectively.  Based on object state characteristics, we categorized state labels into nine categories: 
       </p>
       <figure class="image" style="margin-bottom: 1.5rem;">
         <img src="static/images/fig_state_distribution.png" alt="fig_state" style="max-width: 100%; height: auto;">
       </figure>
+      <!--
       <ul style="margin-left: 1.5em; list-style-type: disc; margin-top: 1.5rem; margin-bottom: 1.5rem;">
         <li style="font-size: 20px;">
           Functional state: Describes the real-time operational mode of a system, device, or object.
@@ -383,13 +386,14 @@
           Uncertainty state: Refers to missing or incomplete information in the system, reflecting uncertainty about the current situation or data reliability.
         </li>
       </ul>
+      -->
 
 
       <h2 class="title is-3" style="text-align: center;">
         Method and Experimental
       </h2>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        We propose a model-agnostic module named Text-Augmented Visual Semantic (TAVS) module that integrates fine-grained text cues—<strong style="color: #99CC00;">emotion</strong>, <strong style="color: #4BACC6;">state</strong>, and <strong style="color: #C05046;">frame-level caption</strong> encoded by CLIP—into baseline models to enhance reasoning about complex object interactions and narrative dynamics.
+        We propose a model-agnostic module named <strong style="color: #FFC000;">Text-Augmented Visual Semantic (TAVS)</strong> module that integrates fine-grained text cues—<strong style="color: #99CC00;">emotion</strong>, <strong style="color: #4BACC6;">state</strong>, and <strong style="color: #C05046;">frame-level caption</strong> encoded by CLIP—into baseline models to enhance reasoning about complex object interactions and narrative dynamics.
       </p>
       <figure class="image" style="margin: 0 auto 1rem auto; text-align: center; width: fit-content;">
         <img src="static/images/fig_method_experiment.png" alt="fig_method_experiment" style="max-width: 100%; height: auto;">
@@ -411,7 +415,7 @@
         Case Study
       </h2>
       <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        Scene graph anticipation results of baseline(SceneSayerSDE) and baseline(SceneSayerSDE) with TAVS module on the proposed FiTBench. We report performance for both short-term and long-term future predictions.
+        Scene graph anticipation results of baseline(SceneSayerSDE) and baseline(SceneSayerSDE) with <strong style="color: #FFC000;">TAVS</strong> module on the proposed FiTBench. We report performance for both short-term and long-term future predictions.
       </p>
       <figure class="image" style="margin: 0 auto 1rem auto; text-align: center; width: fit-content;">
         <img src="static/images/fig_visualize_supp.png" alt="fig_visualize" style="max-width: 100%; height: auto;">
@@ -427,11 +431,10 @@
  
    <!-- Next Steps / Future Directions Section -->
   <section class="section">
-    <div class="columns is-centered has-text-centered">
-      <div class="column">
-        <h2 class="title is-3">Conclusion</h2>
-      </div>
-    </div>
+    
+    <h2 class="title is-3" style="text-align: center;">
+      Conclusion
+    </h2>
   
     <div class="container is-max-desktop">
       <div class="columns is-centered">
