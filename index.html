@@ -192,7 +192,7 @@
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Submission ID : 88<br>CVM’2026, April 10-12,2026, Seoul, South Korea</span>
+                    <span class="author-block">Paper ID : 363<br>CVM’2026, April 10-12,2026, Seoul, South Korea</span>
                   </div>
  
                   <div class="column has-text-centered">
@@ -256,7 +256,7 @@
          <h2 class="title is-3">Abstract</h2>
          <div class="content has-text-justified">
           <p>
-            Scene graph anticipation (SGA) aims to predict relations among objects represented as a scene graph for unseen future based only on the past visual observations. As an extremely challenging task, SGA requires fine-grained narrative reasoning capability to understand complex object interactions and their dynamics over time. However, existing datasets lack annotations for contextual drivers of relation evolution (e.g., person emotions, object states), thus failing to support such reasoning ability. To address these limitations, we present FiTBench, a benchmark comprising two datasets with comprehensive semantics and diverse scenarios. First, by providing a systematic annotation pipeline, FiTBench details cues of scene and narrative evolution thus enabling fine-grained reasoning. Second, FiTBench integrates ego-centric videos with rare hand-object interactions, enriching existing benchmarks and challenging current SGA methods. Third, a model-agnostic Text-Augmented Visual Semantics(TAVS) module is proposed to reason about narrative evolution by incorporating fine-grained text cues. Experimental results show that by integrating TAVS with fine-grained text cues, six representative SGA models achieve average gains of 18% and 26% on two FiTBench datasets, respectively.
+            Scene graph anticipation (SGA) aims to predict future pair-wise relations among objects, represented as a scene graph, based only on past visual observations. However, predicting coherent and plausible future relations remains an open challenge due to the lack of fine-grained narrative reasoning capabilities to understand complex object interactions and their dynamics over time. Such reasoning requires modeling various contextual drivers (e.g., person emotions, object states) for video scene evolution. In this paper, we present FiTBench, a benchmark for scene graph anticipation with comprehensive semantics and diverse scenarios. Unlike the existing datasets that only provide scene graph annotations, FiTBench details cues of scene and narrative evolution by providing a systematic annotation pipeline and thus supports further fine-grained scene understanding. Moreover, a model-agnostic Text-Augmented Visual Semantics (TAVS) module is proposed to reason about narrative evolution by incorporating fine-grained text cues. Experimental results suggest that integrating fine-grained contextual cues is the key for improving the anticipation performance of SGA methods: six representative models achieve average gains of 4.33% and 3.12% on two FiTBench datasets, respectively.
           </p>
         </div>
       </div>
@@ -450,7 +450,6 @@
       <div class="highlight-box" >
           <b>Takeaway V:</b> The video durations in the FiT-PVSG dataset are generally longer. Consequently, even when the initial input video has the lowest clip rate, TAVS can still leverage various contextual drivers within the evolving video scenes to enable more accurate predictions.
       </div>
-      
 
       <h2 class="title is-3" style="text-align: center;">
         Case Study
