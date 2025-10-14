@@ -428,9 +428,9 @@
       <figure class="image" style="margin: 0 auto 1rem auto; text-align: center; width: fit-content;">
         <img src="static/images/fig_method_experiment.png" alt="fig_method_experiment" style="max-width: 100%; height: auto;">
       </figure>
-      <p style="margin-top: 1.5rem; margin-bottom: 1.5rem;font-size: 20px;">
-        Different baselines incorporate TAVS modules with different boosts on the fitbench.
-      </p>
+      <h3 class="title is-4">
+        Standard Experimental Results Analysis
+      </h3>
       <div class="highlight-box" >
           <b>Takeaway I:</b> Different baselines incorporate TAVS modules with different boosts on the fitbench.
       </div>
@@ -438,8 +438,19 @@
           <b>Takeaway II:</b> When observing a limited portion of the video, the improvement is notably higher, suggesting that fine-grained text cues offer strong priors for future reasoning.
       </div>
       <div class="highlight-box" >
-          <b>Takeaway III:</b> The mean recall results suggest that the model struggles to generalize across the diverse relation types in FiT-PVSG, reflecting the increased difficulty of scene graph prediction on this dataset.
+          <b>Takeaway III:</b> Processing datasets like FiT-PVSG, which feature more categories and complex scenarios, requires more detailed contextual clues.
       </div>
+
+      <h3 class="title is-4">
+        Different &#x1D4A1; Values Experimental Results Analysis
+      </h3>
+      <div class="highlight-box" >
+          <b>Takeaway I:</b> The higher initial clip rate of the input video providing more fine-grained text cues from known context, enabling TAVS to enhance the model's narrative reasoning capabilities by leveraging a greater number of text cues.
+      </div>
+      <div class="highlight-box" >
+          <b>Takeaway II:</b> The video durations in the FiT-PVSG dataset are generally longer. Consequently, even when the initial input video has the lowest clip rate, TAVS can still leverage various contextual drivers within the evolving video scenes to enable more accurate predictions.
+      </div>
+      
 
       <h2 class="title is-3" style="text-align: center;">
         Case Study
